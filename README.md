@@ -1,3 +1,3 @@
-# internship-assignment-airtribe
+# KanBoard
 
 A Notion Like Kan-Ban Board.
