@@ -1,16 +1,16 @@
-import AppBar  from "@mui/material/AppBar";
+import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
-import { IconButton } from '@mui/material';
-import  ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import Box from '@mui/material/Box';
+import { IconButton } from "@mui/material";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import Box from "@mui/material/Box";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
-import Button from '@mui/material/Button';
+import Button from "@mui/material/Button";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
- 
-const Navbar = () =>{
+
+const Navbar = () => {
   return (
     <AppBar
       position="static"
@@ -26,26 +26,18 @@ const Navbar = () =>{
       }}
     >
       <Toolbar variant="dense">
-        <IconButton
-          edge="start"
-          color="inherit"
-          sx={{ mr: 2 }}
-        >
+        <IconButton edge="start" color="inherit" sx={{ mr: 2 }}>
           <ArrowBackIcon />
         </IconButton>
-        <IconButton
-          edge="start"
-          color="inherit"
-          sx={{ mr: 2 }}
-        >
+        <IconButton edge="start" color="inherit" sx={{ mr: 2 }}>
           <ArrowForwardIcon />
         </IconButton>
         <Typography
           variant="h6"
           color="inherit"
           component="div"
-          
-          sx={{ flexGrow: 1,}}
+          fontSize="1rem"
+          sx={{ flexGrow: 1 }}
         >
           Portfolio Projects & Title
         </Typography>
@@ -73,7 +65,6 @@ const Navbar = () =>{
       </Toolbar>
     </AppBar>
   );
-}
-
+};
 
 export default Navbar;
