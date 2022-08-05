@@ -263,7 +263,7 @@ const Kanban = () => {
                                         flexDirection: "row",
                                         justifyContent: "space-between",
                                         alignItems: "center",
-                                        borderRadius: "10px",
+                                        borderRadius: "5px",
                                         userSelect: "none",
                                         px: 2,
                                         py: 1,
@@ -273,9 +273,9 @@ const Kanban = () => {
                                           ? "transparent"
                                           : "#fff",
                                         "-webkit-box-shadow":
-                                          " 0px 0px 22px -10px rgba(66,66,66,0.24)",
+                                          " 0px 0px 10px -10px rgba(66,66,66,0.24)",
                                         "-moz-box-shadow":
-                                          "0px 0px 22px -10px rgba(66,66,66,0.24)",
+                                          "0px 0px 10px -10px rgba(66,66,66,0.24)",
                                         boxShadow:
                                           "0px 0px 22px -10px rgba(66,66,66,0.24)",
                                         color: "black",
