@@ -40,7 +40,7 @@ const Navbar = () => {
           fontSize="1rem"
           sx={{ flexGrow: 1 }}
         >
-          Portfolio Projects & Title
+          My Todo-List
         </Typography>
         <Box
           sx={{
