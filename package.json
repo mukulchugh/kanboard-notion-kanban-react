@@ -1,8 +1,7 @@
 {
-  "name": "KanBoard",
-  "version": "1.0.0",
+  "name": "kanboard",
+  "version": "0.1.0",
   "private": true,
-  "license": "MIT",
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
@@ -10,20 +9,36 @@
     "@material-ui/icons": "^4.11.3",
     "@mui/icons-material": "^5.8.4",
     "@mui/material": "^5.9.3",
-    "next": "12.2.3",
-    "react": "18.2.0",
+    "randomcolor": "^0.6.2",
+    "react": "^18.2.0",
+    "react-beautiful-dnd": "^13.1.0",
     "react-dom": "18.2.0",
-    "uuid": "^8.3.2"
+    "react-scripts": "^2.1.3",
+    "uuid": "^8.3.2",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "@types/node": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "typescript": "latest"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

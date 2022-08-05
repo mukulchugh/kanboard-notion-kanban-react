@@ -1,43 +1,44 @@
+import React from "react";
 import Box from "@mui/material/Box";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Navbar from "./Navbar";
-import {
-  Avatar,
-  Icon,
-  IconButton,
-  Typography,
-  Stack,
-  Button,
-  List,
-  Grid,
-  ListItem,
-  Item,
-  Container,
-} from "@mui/material";
+import { Avatar, Typography, List, Grid, ListItem } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import SearchIcon from "@mui/icons-material/Search";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import SettingsIcon from "@mui/icons-material/Settings";
-import DeleteIcon from "@material-ui/icons/Delete";
 import { PlayArrow } from "@mui/icons-material";
-import Link from "next/link";
+import { v4 as uuid } from "uuid";
 
 const list = [
   {
-    id: 1,
-    title: "Home",
-    path: "/",
+    id: uuid(),
+    title: "Content Writeups",
   },
   {
-    id: 2,
-    title: "About",
-    path: "/about",
+    id: uuid(),
+    title: "Study Plan",
   },
   {
-    id: 3,
-    title: "Contact",
-    path: "/contact",
+    id: uuid(),
+    title: "Job Applications Tracker",
+  },
+  {
+    id: uuid(),
+    title: "Coursework",
+  },
+  {
+    id: uuid(),
+    title: "My Todo-List",
+  },
+  {
+    id: uuid(),
+    title: "College Notes",
+  },
+  {
+    id: uuid(),
+    title: "Random Stuff",
   },
 ];
 const menu = [
@@ -152,24 +153,22 @@ function Sidebar({ children }) {
         <List>
           {list.map((item) => (
             <div style={{ display: "flex", flexDirection: "row" }}>
-              <Link href={item.path}>
-                <ListItem
-                  sx={{
-                    color: "#757370",
-                    borderRadius: "4px",
-                    flexWrap: "space-between",
-                    cursor: "pointer",
-                    ":hover": {
-                      backgroundColor: "#E6E6E4",
-                      color: "#000",
-                    },
-                  }}
-                  key={item.id}
-                >
-                  <PlayArrow sx={{ mr: 1, ml: -2 }} fontSize="small" />
-                  {item.title}
-                </ListItem>
-              </Link>
+              <ListItem
+                sx={{
+                  color: "#757370",
+                  borderRadius: "4px",
+                  flexWrap: "space-between",
+                  cursor: "pointer",
+                  ":hover": {
+                    backgroundColor: "#E6E6E4",
+                    color: "#000",
+                  },
+                }}
+                key={item.id}
+              >
+                <PlayArrow sx={{ mr: 1, ml: -2 }} fontSize="small" />
+                {item.title}
+              </ListItem>
             </div>
           ))}
         </List>
