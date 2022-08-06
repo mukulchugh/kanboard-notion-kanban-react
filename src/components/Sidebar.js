@@ -69,7 +69,7 @@ function Sidebar({ children }) {
         pt: 2,
         pl: 2,
         color: "#000",
-        width: "15%",
+        width: "17%",
       }}
     >
       <CssBaseline />
@@ -157,10 +157,12 @@ function Sidebar({ children }) {
                 sx={{
                   color: "#757370",
                   borderRadius: "4px",
+                  fontWeight: "bold",
+                  width: "250px",
                   flexWrap: "space-between",
                   cursor: "pointer",
                   ":hover": {
-                    backgroundColor: "#E6E6E4",
+                    backgroundColor: "#ddd",
                     color: "#000",
                   },
                 }}

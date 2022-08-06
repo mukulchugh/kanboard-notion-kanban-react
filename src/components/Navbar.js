@@ -19,7 +19,7 @@ const Navbar = () => {
         flexGrow: 1,
         position: "fixed",
         top: 0,
-        width: "85vw",
+        width: "80vw",
         right: 0,
         color: "#000",
         backgroundColor: "#fff",
@@ -40,7 +40,7 @@ const Navbar = () => {
           fontSize="1rem"
           sx={{ flexGrow: 1 }}
         >
-          Portfolio Projects & Title
+          My Todo-List
         </Typography>
         <Box
           sx={{

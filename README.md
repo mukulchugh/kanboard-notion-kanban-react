@@ -1,8 +1,68 @@
-# Getting Started with Create React App
+<h1 align="center">KanBoard - A Notion Like KanBan App</h1>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](public/Screenshot.png)
 
-## Available Scripts
+<br>
+
+## Overview
+
+An application created using **ReactJS** and **MUI**.
+
+The application is a Notion inspired kanban board, which lets the user set tasks, and manage routine or projects using the kanban approach. Its User Interface is inspired from Notion (a popular productivity app). KanBoard supports features all CRUD operations i.e. Add, Remove, Update tasks.
+
+This project utilizes React-Beautiful-Dnd package for the implementation of Drag & Drop functionality in the kanban Board. This library if built by Atlassian for implementing the same feature in their products like Jira and Trello.
+
+Currently, the application utilize local storage to save states, and element position.
+
+Future Scope, this can be made a full fledged productivity application, with a dedicated backend and more features like note taking and WYSIWYG Editor etc.
+
+_Note : This application is made as part of internship selection process at AirTribe._
+
+<br>
+
+## Live URL
+
+The application is hosted on Netlify. Please find the link to it below.
+
+<h3><a href="https://notion-kanboard-mukul.netlify.app/">Demo : See it Live</a></h3>
+
+<br>
+
+## Tech Stack
+
+- ReactJS <img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" alt="ReactJS" width=40/> &nbsp; "Javascript Framework"
+- MUI <img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" alt="MUI" width=40/> &nbsp; "UI Component Library"
+- React-Beautiful-Dnd <img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" alt="React Beautiful Dnd" width=40/> &nbsp; "Drag & Drop Feature"
+
+<br>
+
+## Some major Dependencies
+
+- "@emotion/react": "^11.10.0"
+- "@emotion/styled": "^11.10.0"
+- "@material-ui/core": "^4.12.4"
+- "@material-ui/icons": "^4.11.3"
+- "@mui/icons-material": "^5.8.4"
+- "@mui/material": "^5.9.3"
+- "randomcolor": "^0.6.2"
+- "react-beautiful-dnd": "^13.1.0"
+- "uuid": "^8.3.2"
+
+<br>
+
+## Page load time
+
+I used Lighthouse Chrome DevTools to check application performance.
+![image](public/performance.png)
+
+To improve accessibility score, We can optimize the components and implement ARIA based semantics which can improve the accessibility for the app.
+**The performance metric varies between 96-98**  
+Others remain constant
+
+<br>
+
+## Run the Project.
 
 In the project directory, you can run:
 
@@ -14,57 +74,9 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app is ready to be deployed!

@@ -69,9 +69,12 @@ const DividerBar = () => {
           >
             <Button
               sx={{
-                color: "black",
+                color: "#666",
                 textTransform: "capitalize",
                 fontWeight: "bold",
+                ":hover": {
+                  backgroundColor: "#eee",
+                },
               }}
             >
               <AssessmentIcon
@@ -95,6 +98,9 @@ const DividerBar = () => {
               sx={{
                 color: "black",
                 textTransform: "capitalize",
+                ":hover": {
+                  backgroundColor: "#eee",
+                },
               }}
             >
               Sort
@@ -103,6 +109,9 @@ const DividerBar = () => {
               sx={{
                 color: "black",
                 textTransform: "capitalize",
+                ":hover": {
+                  backgroundColor: "#eee",
+                },
               }}
             >
               Filter
@@ -149,8 +158,8 @@ const DividerBar = () => {
       <Divider
         sx={{
           fontSize: "50px",
-          width: "15%",
-          borderColor: "#757370",
+          width: "13%",
+          borderColor: "#666",
           fontWeight: "bold",
         }}
       />
