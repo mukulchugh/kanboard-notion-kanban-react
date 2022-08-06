@@ -20,6 +20,11 @@ Future Scope, this can be made a full fledged productivity application, with a d
 _Note : This application is made as part of internship selection process at AirTribe._
 
 <br>
+## Project Explainer Video
+
+https://www.loom.com/embed/b3488cffb899433882031369f211e57b
+
+<br>
 
 ## Live URL
 
