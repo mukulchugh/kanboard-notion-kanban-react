@@ -1,11 +1,6 @@
-# Notion Like Kanban App
-
-![image](public/Screenshot.png)
-
-<br>
-
 <h1 align="center">KanBoard - A Notion Like KanBan App</h1>
-
+<br>
+![image](public/Screenshot.png)
 <br>
 
 ## Overview
