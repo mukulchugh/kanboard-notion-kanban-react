@@ -32,8 +32,7 @@ The application is hosted on Netlify. Please find the link to it below.
 
 ## Tech Stack
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png
-" width=50/> &nbsp;
+<img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" width=50/> &nbsp;
 <img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" width=50/> &nbsp;
 <img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" width=50/>
 
