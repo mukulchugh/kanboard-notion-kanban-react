@@ -21,6 +21,12 @@ _Note : This application is made as part of internship selection process at AirT
 
 <br>
 
+## Project Explainer Video
+
+<h3><a href="https://www.loom.com/share/b3488cffb899433882031369f211e57b/">See the Video</a></h3>
+
+<br>
+
 ## Live URL
 
 The application is hosted on Netlify. Please find the link to it below.
