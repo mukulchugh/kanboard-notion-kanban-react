@@ -32,8 +32,8 @@ The application is hosted on Netlify. Please find the link to it below.
 
 ## Tech Stack
 
-![ReactJS](https://img.shields.io/badge/ReactJS-61DAFB?&style=for-the-badge&logo=react&logoColor=white&style=plastic) ![MUI](https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic)
-![RBD](https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic)
+![ReactJS](https://img.shields.io/badge/ReactJS-61DAFB?&style=for-the-badge&logo=react&logoColor=white&style=plastic) ![MUI](https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic | width=50)
+![RBD](https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic | width=50)
 
 <br>
 
