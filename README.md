@@ -1,6 +1,6 @@
 # Notion Like Kanban App
 
-![image](https://user-images.githubusercontent.com/54144759/174669801-4c06e4a0-1e3c-48f7-8ea1-f2f0238dbf28.png)
+![image](/blob/development/public//Screenshot.png)
 
 <br>
 
@@ -54,7 +54,7 @@ The application is hosted on Netlify. Please find the link to it below.
 ## 🙄 Page load time
 
 I used Lighthouse Chrome DevTools to check application performance.
-![image]("../../public/performance.png")
+![image]("/blob/development/public/performance.png")
 
 To improve accessibility score, We can optimize the components and implement ARIA based semantics which can improve the accessibility for the app.
 **The performance metric varies between 96-98**  
