@@ -32,9 +32,9 @@ The application is hosted on Netlify. Please find the link to it below.
 
 ## Tech Stack
 
-<img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" width=50/> &nbsp;
-<img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" width=50/> &nbsp;
-<img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" width=50/>
+<img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" alt="ReactJS" width=50/> &nbsp;
+<img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" alt="MUI" width=50/> &nbsp;
+<img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" alt="React Beautiful Dnd" width=50/>
 
 <br>
 
