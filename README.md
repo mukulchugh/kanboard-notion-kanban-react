@@ -22,7 +22,7 @@ _Note : This application is made as part of internship selection process at AirT
 
 <br>
 
-## 🥳 Live URL
+## Live URL
 
 The application is hosted on Netlify. Please find the link to it below.
 
@@ -39,19 +39,19 @@ The application is hosted on Netlify. Please find the link to it below.
 
 ## Some major Dependencies
 
-"@emotion/react": "^11.10.0"
-"@emotion/styled": "^11.10.0"
-"@material-ui/core": "^4.12.4"
-"@material-ui/icons": "^4.11.3"
-"@mui/icons-material": "^5.8.4"
-"@mui/material": "^5.9.3"
-"randomcolor": "^0.6.2"
-"react-beautiful-dnd": "^13.1.0"
-"uuid": "^8.3.2"
+- "@emotion/react": "^11.10.0"
+- "@emotion/styled": "^11.10.0"
+- "@material-ui/core": "^4.12.4"
+- "@material-ui/icons": "^4.11.3"
+- "@mui/icons-material": "^5.8.4"
+- "@mui/material": "^5.9.3"
+- "randomcolor": "^0.6.2"
+- "react-beautiful-dnd": "^13.1.0"
+- "uuid": "^8.3.2"
 
 <br>
 
-## 🙄 Page load time
+## Page load time
 
 I used Lighthouse Chrome DevTools to check application performance.
 ![image](public/performance.png)
@@ -62,7 +62,7 @@ Others remain constant
 
 <br>
 
-## Run the Project in Local Environment
+## Run the Project.
 
 In the project directory, you can run:
 
