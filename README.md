@@ -8,11 +8,13 @@
 
 <br>
 
-## 🧐 Overview
+## Overview
 
 An application created using **ReactJS** and **MUI**.
 
 The application is a Notion inspired kanban board, which lets the user set tasks, and manage routine or projects using the kanban approach. Its User Interface is inspired from Notion (a popular productivity app). KanBoard supports features all CRUD operations i.e. Add, Remove, Update tasks.
+
+This project utilizes React-Beautiful-Dnd package for the implementation of Drag & Drop functionality in the kanban Board. This library if built by Atlassian for implementing the same feature in their products like Jira and Trello.
 
 Currently, the application utilize local storage to save states, and element position.
 
@@ -32,9 +34,9 @@ The application is hosted on Netlify. Please find the link to it below.
 
 ## Tech Stack
 
-<img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" alt="ReactJS" width=50/> &nbsp;
-<img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" alt="MUI" width=50/> &nbsp;
-<img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" alt="React Beautiful Dnd" width=50/>
+- ReactJS <img src="https://seeklogo.com/images/R/react-logo-7B3CE81517-seeklogo.com.png" alt="ReactJS" width=40/> &nbsp; "Javascript Framework"
+- MUI <img src="https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=MUI&logoColor=white&style=plastic" alt="MUI" width=40/> &nbsp; "UI Component Library"
+- React-Beautiful-Dnd <img src="https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=RBD&logoColor=white&style=plastic" alt="React Beautiful Dnd" width=40/> &nbsp; "Drag & Drop Feature"
 
 <br>
 
