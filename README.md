@@ -1,8 +1,68 @@
 # Notion Like Kanban App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/54144759/174669801-4c06e4a0-1e3c-48f7-8ea1-f2f0238dbf28.png)
 
-## Available Scripts
+<br>
+
+<h1 align="center">KanBoard - A Notion Like KanBan App</h1>
+
+<br>
+
+## 🧐 Overview
+
+An application created using **ReactJS** and **MUI**.
+
+The application is a Notion inspired kanban board, which lets the user set tasks, and manage routine or projects using the kanban approach. Its User Interface is inspired from Notion (a popular productivity app). KanBoard supports features all CRUD operations i.e. Add, Remove, Update tasks.
+
+Currently, the application utilize local storage to save states, and element position.
+
+Future Scope, this can be made a full fledged productivity application, with a dedicated backend and more features like note taking and WYSIWYG Editor etc.
+
+_Note : This application is made as part of internship selection process at AirTribe._
+
+<br>
+
+## 🥳 Live URL
+
+The application is hosted on Netlify. Please find the link to it below.
+
+<h3><a href="https://notion-kanboard-mukul.netlify.app/">Demo : See it Live</a></h3>
+
+<br>
+
+## Tech Stack
+
+![ReactJS](https://img.shields.io/badge/ReactJS-61DAFB?&style=for-the-badge&logo=react&logoColor=white&style=plastic) ![MUI](https://seeklogo.com/images/M/mui-logo-56F171E991-seeklogo.com.png?style=for-the-badge&logo=SASS&logoColor=white&style=plastic)
+![RBD](https://user-images.githubusercontent.com/2182637/53611918-54c1ff80-3c24-11e9-9917-66ac3cef513d.png?style=for-the-badge&logo=SASS&logoColor=white&style=plastic)
+
+<br>
+
+## Some major Dependencies
+
+"@emotion/react": "^11.10.0"
+"@emotion/styled": "^11.10.0"
+"@material-ui/core": "^4.12.4"
+"@material-ui/icons": "^4.11.3"
+"@mui/icons-material": "^5.8.4"
+"@mui/material": "^5.9.3"
+"randomcolor": "^0.6.2"
+"react-beautiful-dnd": "^13.1.0"
+"uuid": "^8.3.2"
+
+<br>
+
+## 🙄 Page load time
+
+I used Lighthouse Chrome DevTools to check application performance.
+![image]("../../public/performance.png")
+
+To improve accessibility score, We can optimize the components and implement ARIA based semantics which can improve the accessibility for the app.
+**The performance metric varies between 96-98**  
+Others remain constant
+
+<br>
+
+## Run the Project in Local Environment
 
 In the project directory, you can run:
 
@@ -19,4 +79,4 @@ You may also see any lint errors in the console.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Your app is ready to be deployed!
+The app is ready to be deployed!
