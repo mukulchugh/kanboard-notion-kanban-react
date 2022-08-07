@@ -57,7 +57,8 @@ I used Lighthouse Chrome DevTools to check application performance.
 ![image](public/performance.png)
 
 To improve accessibility score, We can optimize the components and implement ARIA based semantics which can improve the accessibility for the app.
-**The performance metric varies between 96-98**  
+
+**The performance metric varies between 96-100**  
 Others remain constant
 
 <br>
