@@ -23,7 +23,6 @@ function App() {
           Kanban Board
         </Typography>
         <DividerBar />
-        {/* <Kanban /> */}
         <Kanban />
       </Layout>
     </>

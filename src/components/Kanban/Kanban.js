@@ -1,17 +1,23 @@
 import React, { useEffect, useState } from "react";
 import { columnsRawData } from "./Data";
 import Column from "./Column";
-
+import AddColumn from "./AddColumn";
 import KanModal from "./Modal";
 import { DragDropContext } from "react-beautiful-dnd";
-import { Box } from "@mui/material";
+import { Box, Button } from "@mui/material";
+import AddIcon from "@mui/icons-material/Add";
 
 const Kanban = () => {
+  const [openColModal, setOpenColModal] = useState(false);
   const [open, setOpen] = useState(false);
   const [columns, setColumns] = useState(
     JSON.parse(window.localStorage.getItem("columns")) || columnsRawData
   );
   const [modal, setModal] = useState(false);
+
+  const closeColModal = () => {
+    setOpenColModal(false);
+  };
 
   const onDragEnd = (result) => {
     const { destination, source, draggableId } = result;
@@ -20,7 +26,6 @@ const Kanban = () => {
       console.log("no destination");
       return;
     }
-
     if (
       destination.droppableId === source.droppableId &&
       destination.index === source.index
@@ -28,7 +33,6 @@ const Kanban = () => {
       console.log("index and destination the same");
       return;
     }
-
     const start = columns[source.droppableId];
     const finish = columns[destination.droppableId];
 
@@ -45,7 +49,6 @@ const Kanban = () => {
           return c;
         } else return c;
       });
-
       const newColumnsState2 = [...newColumnsState];
       setColumns(newColumnsState2);
     } else {
@@ -119,6 +122,13 @@ const Kanban = () => {
     });
     setColumns(updatedColumns);
   };
+  const addColumn = (newColumn) => {
+    setColumns([...columns, newColumn]);
+  };
+  const removeColumn = (columnId) => {
+    const updatedColumns = columns.filter((item) => item.id !== columnId);
+    setColumns(updatedColumns);
+  };
 
   useEffect(() => {
     window.localStorage.setItem("columns", JSON.stringify(columns));
@@ -127,6 +137,29 @@ const Kanban = () => {
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
+        <AddColumn
+          openModal={openColModal}
+          closeModal={closeColModal}
+          addColumn={addColumn}
+        />
+        <Button
+          startIcon={<AddIcon />}
+          sx={{
+            color: "#000",
+            backgroundColor: "#eee",
+            textTransform: "none",
+            ":hover": {
+              backgroundColor: "#ddd",
+            },
+            py: 1,
+            my: 2,
+          }}
+          onClick={() => {
+            setOpenColModal(true);
+          }}
+        >
+          Add New Column
+        </Button>
         <Box>
           {modal && (
             <KanModal
@@ -151,6 +184,7 @@ const Kanban = () => {
                   key={c.name}
                   openModal={openModal}
                   removeTask={removeTask}
+                  removeColumn={removeColumn}
                   editTask={editTask}
                 />
               );

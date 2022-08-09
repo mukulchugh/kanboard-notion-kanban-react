@@ -1,8 +1,8 @@
 import React from "react";
-import { Button } from "@mui/material";
+import { Button, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import Task from "./Task";
-
+import DeleteIcon from "@mui/icons-material/Delete";
 import { Droppable } from "react-beautiful-dnd";
 import { Box, Typography } from "@mui/material";
 
@@ -51,7 +51,7 @@ const Column = (props) => {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
           width: "100%",
         }}
       >
@@ -69,6 +69,15 @@ const Column = (props) => {
         >
           {props.columnData.name} ({props.columnData.taskIds.length})
         </Typography>
+        <IconButton
+          sx={{ right: 20 }}
+          onClick={(e) => {
+            e.preventDefault();
+            props.removeColumn(props.columnData.id);
+          }}
+        >
+          <DeleteIcon fontSize="small" />
+        </IconButton>
       </Box>
 
       <Droppable droppableId={`${props.columnData.id - 1}`}>
