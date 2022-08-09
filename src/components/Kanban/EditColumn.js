@@ -1,19 +1,18 @@
-import React from "react";
-import useInputState from "./useInputState";
+import React, { useState } from "react";
 import { v4 as uuid } from "uuid";
 import { Modal, Box, Button, TextField } from "@mui/material";
+import randomColor from "randomcolor";
 
-const KanModal = (props) => {
-  const [text, handleChangeText] = useInputState("");
-  const [title, handleChangeTitle] = useInputState("");
-
+const EditColumn = (props) => {
+  const [title, setTitle] = useState("");
   const idColumn = props.columnData;
 
-  const newTask = {
+  const newColumn = {
     id: uuid(),
-    text: text,
-    idColumn: idColumn,
-    title: title,
+    name: title,
+    limit: 10,
+    color: randomColor({ luminosity: "light" }),
+    taskIds: [],
   };
 
   const style = {
@@ -22,12 +21,11 @@ const KanModal = (props) => {
     left: "50%",
     transform: "translate(-50%, -50%)",
     width: 500,
-    bgcolor: "white",
+    backgroundColor: "white",
     boxShadow: 24,
     p: 2,
     borderRadius: 4,
     display: "flex",
-
     justifyContent: "center",
   };
   return (
@@ -36,7 +34,8 @@ const KanModal = (props) => {
         <form
           onSubmit={(e) => {
             e.preventDefault();
-            props.addTask(newTask);
+            props.addColumn(newColumn);
+            props.closeModal();
           }}
           style={{
             display: "flex",
@@ -50,18 +49,8 @@ const KanModal = (props) => {
             name="title"
             id="title"
             value={title}
-            onChange={handleChangeTitle}
+            onChange={(e) => setTitle(e.target.value)}
             required
-            sx={{ m: 1, width: 400 }}
-          ></TextField>
-          <TextField
-            label="Description"
-            multiline
-            rows={4}
-            value={text}
-            onChange={handleChangeText}
-            name="task"
-            id="task"
             sx={{ m: 1, width: 400 }}
           ></TextField>
           <Button
@@ -74,7 +63,7 @@ const KanModal = (props) => {
             }}
             type="submit"
           >
-            Submit
+            Add New Column
           </Button>
         </form>
       </Box>
@@ -82,4 +71,4 @@ const KanModal = (props) => {
   );
 };
 
-export default KanModal;
+export default EditColumn;

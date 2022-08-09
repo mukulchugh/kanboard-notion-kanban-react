@@ -58,7 +58,14 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 const DividerBar = () => {
   return (
     <div>
-      <Grid container spacing={2}>
+      <Grid
+        container
+        spacing={2}
+        sx={{
+          width: "80vw",
+          overflow: "hidden",
+        }}
+      >
         <Grid item xs={6}>
           <Typography
             sx={{
@@ -69,7 +76,7 @@ const DividerBar = () => {
           >
             <Button
               sx={{
-                color: "#666",
+                color: "#222",
                 textTransform: "capitalize",
                 fontWeight: "bold",
                 ":hover": {
@@ -158,7 +165,7 @@ const DividerBar = () => {
       <Divider
         sx={{
           fontSize: "50px",
-          width: "13%",
+          width: "10vw",
           borderColor: "#666",
           fontWeight: "bold",
         }}
@@ -166,8 +173,9 @@ const DividerBar = () => {
       <Divider
         sx={{
           fontSize: "50px",
-          width: "110%",
+          width: "80vw",
           fontWeight: "bold",
+          overflow: "hidden",
         }}
       />
     </div>

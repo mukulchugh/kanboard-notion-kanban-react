@@ -17,10 +17,10 @@ const Navbar = () => {
       position="static"
       sx={{
         flexGrow: 1,
-        position: "fixed",
+        position: "absolute",
         top: 0,
         width: "80vw",
-        right: 0,
+        right: 50,
         color: "#000",
         backgroundColor: "#fff",
         boxShadow: "none",

@@ -1,6 +1,6 @@
 import { v4 as uuid } from "uuid";
 import randomColor from "randomcolor";
-const taskLimitNumber = 5;
+const taskLimitNumber = 10;
 
 export const columnsRawData = [
   {
@@ -37,7 +37,6 @@ export const columnsRawData = [
     name: "In Progress",
     limit: taskLimitNumber,
     color: randomColor({ luminosity: "light" }),
-
     taskIds: [
       {
         id: uuid(),
@@ -47,5 +46,12 @@ export const columnsRawData = [
       },
       { id: uuid(), text: "Meeting", idColumn: 3, title: "Wash Clothes" },
     ],
+  },
+  {
+    id: 4,
+    name: "In Progress",
+    limit: taskLimitNumber,
+    color: randomColor({ luminosity: "light" }),
+    taskIds: [],
   },
 ];

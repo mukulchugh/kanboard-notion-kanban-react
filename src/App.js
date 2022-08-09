@@ -1,10 +1,8 @@
 import React from "react";
-import { Typography } from "@mui/material";
-import { CssBaseline } from "@mui/material";
+import { Typography, Box, CssBaseline } from "@mui/material";
 import Layout from "./layout/Layout";
-
-import Kanban from "./components/Kanban/Kanban";
 import DividerBar from "./components/DividerBar";
+import Kanban from "./components/Kanban/Kanban";
 
 function App() {
   return (
@@ -23,7 +21,6 @@ function App() {
           Kanban Board
         </Typography>
         <DividerBar />
-        {/* <Kanban /> */}
         <Kanban />
       </Layout>
     </>

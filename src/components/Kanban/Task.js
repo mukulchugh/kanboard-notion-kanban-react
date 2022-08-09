@@ -99,7 +99,6 @@ const Task = (props) => {
                       Edit
                     </Button>
                   </MenuItem>
-
                   <MenuItem onClick={handleClose}>
                     <Button
                       sx={{
