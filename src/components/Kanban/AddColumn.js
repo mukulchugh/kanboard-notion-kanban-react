@@ -1,14 +1,13 @@
 import React, { useState } from "react";
-import { v4 as uuid } from "uuid";
 import { Modal, Box, Button, TextField } from "@mui/material";
 import randomColor from "randomcolor";
 
-const EditColumn = (props) => {
+const AddColumn = (props) => {
   const [title, setTitle] = useState("");
   const idColumn = props.columnData;
 
   const newColumn = {
-    id: uuid(),
+    id: props.columnId,
     name: title,
     limit: 10,
     color: randomColor({ luminosity: "light" }),
@@ -71,4 +70,4 @@ const EditColumn = (props) => {
   );
 };
 
-export default EditColumn;
+export default AddColumn;

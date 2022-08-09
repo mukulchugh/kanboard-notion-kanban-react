@@ -3,8 +3,7 @@ import { Button, IconButton } from "@mui/material";
 import AddIcon from "@mui/icons-material/Add";
 import Task from "./Task";
 import { Droppable } from "react-beautiful-dnd";
-import { Box, Typography, Menu, MenuItem } from "@mui/material";
-import EditIcon from "@mui/icons-material/Edit";
+import { Box, Typography } from "@mui/material";
 import DeleteIcon from "@mui/icons-material/Delete";
 
 const Column = (props) => {

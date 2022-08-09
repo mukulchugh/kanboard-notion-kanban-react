@@ -38,7 +38,6 @@ const EditForm = (props) => {
           id="title"
           value={title}
           onChange={handleChangeTitle}
-          required
           sx={{ m: 1 }}
         />
         <TextField
@@ -51,12 +50,11 @@ const EditForm = (props) => {
           onChange={handleChangeText}
           name="task"
           id="task"
-          required
           variant="outlined"
         />
         <Button
           sx={{
-            bgcolor: "transparent",
+            backgroundColor: "transparent",
             color: "#aaa",
             ":hover": { bgcolor: "transparent" },
           }}

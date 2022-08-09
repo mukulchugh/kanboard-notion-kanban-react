@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, CssBaseline } from "@mui/material";
+import { Typography, CssBaseline } from "@mui/material";
 import Layout from "./layout/Layout";
 import DividerBar from "./components/DividerBar";
 import Kanban from "./components/Kanban/Kanban";

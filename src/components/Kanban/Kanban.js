@@ -4,7 +4,7 @@ import Column from "./Column";
 import KanModal from "./Modal";
 import { DragDropContext } from "react-beautiful-dnd";
 import { Box, Button } from "@mui/material";
-import EditColumn from "./EditColumn";
+import AddColumn from "./AddColumn";
 import AddIcon from "@mui/icons-material/Add";
 
 const Kanban = () => {
@@ -142,10 +142,11 @@ const Kanban = () => {
   return (
     <>
       <DragDropContext onDragEnd={onDragEnd}>
-        <EditColumn
+        <AddColumn
           openModal={openColModal}
           closeModal={closeColModal}
           addColumn={addColumn}
+          columnId={columns.length + 1}
         />
         <Button
           startIcon={<AddIcon />}
