@@ -141,6 +141,7 @@ const Kanban = () => {
           openModal={openColModal}
           closeModal={closeColModal}
           addColumn={addColumn}
+          columnId={columns.length + 1}
         />
         <Button
           startIcon={<AddIcon />}

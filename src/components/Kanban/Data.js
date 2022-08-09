@@ -29,7 +29,12 @@ export const columnsRawData = [
     limit: taskLimitNumber,
     color: randomColor({ luminosity: "light" }),
     taskIds: [
-      { id: uuid(), text: "Blog assets", idColumn: 2, title: "Finalize Blogs" },
+      {
+        id: uuid(),
+        text: "Blog assets",
+        idColumn: 2,
+        title: "Finalize Blogs",
+      },
     ],
   },
   {
@@ -45,7 +50,12 @@ export const columnsRawData = [
         idColumn: 3,
         title: "Meeting with Airtribe",
       },
-      { id: uuid(), text: "Meeting", idColumn: 3, title: "Wash Clothes" },
+      {
+        id: uuid(),
+        text: "Meeting",
+        idColumn: 3,
+        title: "Wash Clothes",
+      },
     ],
   },
 ];

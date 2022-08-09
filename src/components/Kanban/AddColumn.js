@@ -5,13 +5,19 @@ import randomColor from "randomcolor";
 
 const AddColumn = (props) => {
   const [title, setTitle] = useState("");
-  const idColumn = props.columnData;
 
   const newColumn = {
-    id: uuid(),
+    id: props.columnId,
     name: title,
     color: randomColor({ luminosity: "light" }),
-    taskIds: [],
+    taskIds: [
+      {
+        id: uuid(),
+        text: "Change css img",
+        idColumn: props.columnId,
+        title: "Meeting with Airtribe",
+      },
+    ],
   };
 
   const style = {
